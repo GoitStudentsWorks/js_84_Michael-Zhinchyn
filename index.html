@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/js_84_Michael-Zhinchyn/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TASTY TREATS'</title>
+  <meta name="description"
+    content="Welcome to Tasty Treats', where you can order your favorite desserts and get them delivered to your doorstep.">
+  
+  <script type="module" crossorigin src="/js_84_Michael-Zhinchyn/assets/favorites-0e88f535.js"></script>
+  <link rel="stylesheet" href="/js_84_Michael-Zhinchyn/assets/favorites-0a657c1c.css">
+</head>
+
+<body id="home-page">
+  <!-- HEADER FOR MOBILE -->
+<header class="header">
+    <div class="block-for-mobile container">
+        <nav class="nav">
+            <div class="logo-block">
+                <a class="logo-first-color" href="./index.html">tasty<span class="logo-second-color">treats.</span></a>
+            </div>
+            <div class="cart-menu-block">
+                <svg id="header-cart-icon" class="header-cart-icon icon" width="24" height="24">
+                    <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-cart"></use>
+                </svg>
+                <svg class="header-hamburger-icon icon" id="hamburger" width="32" height="32">
+                    <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-hamburger"></use>
+                </svg>
+            </div>
+        </nav>
+    </div>
+    <!-- END OF HEADER FOR MOBILE -->
+
+    <!-- TABLET AND DESKTOP MARKUP -->
+    <div class="tablet-desktop container">
+        <nav class="tablet-desktop-nav">
+            <div class="navigations">
+                <a id="home-link" class="tablet-menu-nav-links" href="./index.html">Home</a>
+                <a id="favorites-link" class="tablet-menu-nav-links" href="./favorites.html">Favorites</a>
+            </div>
+
+            <div class="logo-block">
+                <a class="logo-first-color" href="./index.html">tasty<span class="logo-second-color">treats.</span></a>
+            </div>
+
+            <div class="tablet-desktop-nav-icons">
+                <svg id="cart-icon-desktop" class="header-cart-icon icon" width="24" height="24">
+                    <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-cart"></use>
+                </svg>
+
+                <svg class="switcher" id="desktop-switch" width="76" viewBox="0 0 76 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="paint0_linear_desktop" x1="-2.2" y1="23" x2="62.8" y2="23.4"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#9BB537" />
+                            <stop offset="1" stop-color="#9BB537" stop-opacity="0.69" />
+                        </linearGradient>
+
+                        <filter id="filterOffDesktop" x="3" y="1" width="76" height="50" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dx="7" dy="5" />
+                            <feGaussianBlur stdDeviation="7.5" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.627451 0 0 0 0 0.619608 0 0 0 0 0.627451 0 0 0 0.4 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+
+                        <filter id="filterOnDesktop" x="0" y="1" width="76" height="50" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dx="7" dy="5" />
+                            <feGaussianBlur stdDeviation="7.5" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0.6 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+                    </defs>
+
+                    <g filter="url(#filterOffDesktop)">
+                        <rect id="switch-rect-desktop" x="8" y="11" width="46" height="20" rx="10" fill="#CECDCD" />
+                    </g>
+
+                    <circle id="switch-circle-desktop" cx="18" cy="21" r="9.4" fill="#F8F8F8" />
+                </svg>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- END  OF  TABLET   AND   DESKTOP   MARKUP-->
+
+<!-- MOBILE MENU MODAL -->
+<div class="mobile-menu">
+    <svg class="close-menu-icon icon" id="js-close-menu" width="32" height="32">
+        <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-close-x"></use>
+    </svg>
+
+    <div class="mobile-menu-nav">
+        <a id="mobile-home-link" class="mobile-menu-nav-links" href="./index.html">Home</a>
+        <a id="mobile-favorites-link" class="mobile-menu-nav-links" href="./favorites.html">Favorites</a>
+    </div>
+
+    <div class="mobile-menu-switcher">
+        <svg class="switcher" id="mobile-switch" width="76" height="51" viewBox="0 0 76 51" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="paint0_linear_mobile" x1="-2.2" y1="23" x2="62.8" y2="23.4"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#9BB537" />
+                    <stop offset="1" stop-color="#9BB537" stop-opacity="0.69" />
+                </linearGradient>
+
+                <filter id="filterOffMobile" x="3" y="1" width="76" height="50" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset dx="7" dy="5" />
+                    <feGaussianBlur stdDeviation="7.5" />
+                    <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.627451 0 0 0 0 0.619608 0 0 0 0 0.627451 0 0 0 0.4 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+
+                <filter id="filterOnMobile" x="0" y="1" width="76" height="50" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset dx="7" dy="5" />
+                    <feGaussianBlur stdDeviation="7.5" />
+                    <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0.6 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+            </defs>
+
+            <g filter="url(#filterOffMobile)">
+                <rect id="switch-rect-mobile" x="8" y="11" width="46" height="20" rx="10" fill="#CECDCD" />
+            </g>
+
+            <circle id="switch-circle-mobile" cx="18" cy="21" r="9.4" fill="#F8F8F8" />
+        </svg>
+    </div>
+</div>
+<!-- END  OF  MOBILE  MENU  MODAL -->
+
+
+  <main>
+
+    <section class="hero-section">
+  <div class="hero">
+    <div class="hero-left container">
+      <h1 class="hero-heading">
+        Learn to Cook
+        <span class="hero-heading-span">Tasty Treats' </span>Customizable
+        Masterclass
+      </h1>
+      <p class="hero-description">
+        TastyTreats - Customize Your Meal with Ingredient Options and
+        Step-by-Step Video Guides.
+      </p>
+      <button id="hero-order-btn" class="hero-order-btn" type="button">
+        Order now
+      </button>
+    </div>
+
+
+    <div class="swiper-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- слайд 1 -->
+
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <div class="swiper-master-cook-card first-cook"></div>
+            </div>
+
+            <div class="swiper-img">
+              <div class="swiper-cook-center-card first-cook-center-card"></div>
+            </div>
+
+            <div class="swiper-img">
+              <div class="swiper-cook-big-card first-cook-last-card"></div>
+            </div>
+          </div>
+
+
+          <!-- слайд 2 -->
+
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <div class="swiper-master-cook-card second-cook"></div>
+            </div>
+
+            <div class="swiper-img">
+              <div class="swiper-cook-center-card second-cook-center-card"></div>
+            </div>
+
+            <div class="swiper-img">
+              <div class="swiper-cook-big-card second-cook-last-card"></div>
+            </div>
+          </div>
+
+
+          <!-- слайд 3 -->
+
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <div class="swiper-master-cook-card third-cook"></div>
+            </div>
+
+            <div class="swiper-img">
+              <div class="swiper-cook-center-card third-cook-center-card"></div>
+            </div>
+
+            <div class="swiper-img">
+              <div class="swiper-cook-big-card third-cook-last-card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="filter-section">
+  <div class="container">
+    <div class="flex-container">
+      <div class="left-side">
+        <div class="filter-left-side">
+          <div class="filter-all-categories">
+            <button id="all-categories-button" class="filter-all-categories-button">
+              All categories
+            </button>
+            <div class="filter-categories-block">
+              <div class="filter-categories-scroll">
+                <ul class="categories-list"></ul>
+              </div>
+            </div>
+          </div>
+          <!--popular-recipe-->
+          <div class="popular-recipes-block">
+            <h2 class="popular-recipes-heading">Popular recipes</h2>
+            <ul class="popular-recipes-list"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="selector-flex-container">
+          <form class="form-wrapper">
+            <div class="form-group">
+              <div class="input-wrapper">
+                <label class="label-input">Search</label>
+                <input class="input-search" type="text" id="id-input-search" placeholder="Enter Text" />
+                <svg class="search-icon" width="18" height="18">
+                  <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-search"></use>
+                </svg>
+              </div>
+            </div>
+          </form>
+
+          <div class="selector">
+            <label class="label-selector" for="select-time">Time</label>
+            <select name="Time" id="select-time" class="time-selector">
+              <option value="" selected disabled hidden>Select</option>
+            </select>
+          </div>
+
+          <div class="selector-area">
+            <label class="label-selector" for="select-area">Area</label>
+            <select name="Area" id="select-area" class="area-selector">
+              <option value="" selected disabled hidden>Select</option>
+            </select>
+          </div>
+
+          <div class="selector">
+            <label class="label-selector" for="select-Ingredients">Ingredients</label>
+            <select name="Ingredients" id="select-Ingredients" class="Ingredients-selector">
+              <option value="" selected disabled hidden>Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-align">
+          <button type="button" class="reset-filter">
+            <svg class="link-reset-svg" width="16" height="16">
+              <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-close-x"></use>
+            </svg>
+            Reset the filter
+          </button>
+        </div>
+        <ul class="filter-card-set"></ul>
+        <div class="pagination-bar">
+          <div class="pag-btn-block">
+            <button id="pag-btn-start" class="gag-btn-black" type="button" aria-label="first page">
+              <span class="icon-wrap">
+                <svg class="pag-btn-left-icon" width="20" height="20">
+                  <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-arrow"></use>
+                </svg>
+              </span>
+              <span class="icon-wrap overlap">
+                <svg class="pag-btn-left-icon" width="20" height="20">
+                  <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-arrow"></use>
+                </svg>
+              </span>
+            </button>
+            <button id="pag-btn-prev" class="gag-btn-black" type="button" aria-label="previous page">
+              <svg class="pag-btn-left-icon" width="20" height="20">
+                <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="pag-btn-block">
+            <button id="pag-btn-1" class="pag-btn-white pag-btn-number" type="button" aria-label="page 1">1</button>
+            <button id="pag-btn-2" class="pag-btn-white pag-btn-number" type="button" aria-label="page 2">2</button>
+            <button id="pag-btn-3" class="pag-btn-white-tablet pag-btn-number" type="button"
+              aria-label="page 3">3</button>
+            <button class="pag-btn-white" aria-label="more pages">...</button>
+          </div>
+          <div class="pag-btn-block">
+            <button id="pag-btn-next" class="pag-btn-green" type="button" aria-label="next page">
+              <svg class="pag-btn-right-icon-next" width="20" height="20">
+                <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <button id="pag-btn-last" class="pag-btn-green" type="button" aria-label="last page">
+              <span class="icon-container">
+                <span class="icon-wrap-right">
+                  <svg class="pag-btn-right-icon" width="20" height="20">
+                    <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+                <span class="icon-wrap-right overlap-right">
+                  <svg class="pag-btn-right-icon" width="20" height="20">
+                    <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer></footer>
+
+  <div class="order-form-backdrop" id="backdrop">
+    <div class="order-modal" id="modal">
+        <svg id="order-form-close-btn" class="order-form-close-icon" width="20" height="20">
+            <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-close-x"></use>
+        </svg>
+
+        <form class="order-form">
+            <h2 class="order-form-heading">Order now</h2>
+            <div class="input-block">
+                <label for="name" class="order-form-label">Name</label>
+                <input id="name" class="order-form-input" type="text" required pattern="[A-Za-z - ]+"
+                    placeholder="John Doe" />
+            </div>
+
+            <div class="input-block">
+                <label for="phone" class="order-form-label">Phone number</label>
+                <input id="phone" class="order-form-input" type="tel" required pattern="[\+]\d{12}"
+                    placeholder="+380123456789" />
+            </div>
+
+            <div class="input-block">
+                <label for="email" class="order-form-label">Email</label>
+                <input id="email" class="order-form-input" type="email" required
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,3}" placeholder="email@example.com" />
+            </div>
+
+            <div class="input-block">
+                <label for="comments" class="order-form-label">Comment</label>
+                <textarea id="comments" class="order-form-textarea" required
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <button type="submit" class="order-form-send-btn">Send</button>
+        </form>
+
+    </div>
+</div>
+  <div class="recipe-backdrop" id="recipe-backdrop">
+    <div class="recipe-modal" id="recipe-modal">
+        <svg class="recipe-close-icon" id="recipe-close-btn" width="20" height="20">
+            <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-close-x"></use>
+        </svg>
+        <div id="full-recipe" class="full-recipe"></div>
+    </div>
+</div>
+  <div class="add-rating-backdrop">
+  <div class="add-rating-modal">
+    <svg id="add-rating-close-btn" class="add-rating-close-icon" width="20" height="20">
+      <use href="/js_84_Michael-Zhinchyn/assets/sprite-32873850.svg#icon-close-x"></use>
+    </svg>
+    <h3 class="add-rating-title">Rating</h3>
+
+    <form class="add-rating-form">
+      <div class="add-rating-flex-container">
+        <p class="js-rating-choosed">0.0</p>
+        <fieldset class="starability-slot">
+          <input type="radio" id="star1" name="rating" value="1" required />
+          <label for="star1" title="Poor"></label>
+
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="Fair"></label>
+
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="Good"></label>
+
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="Excellent"></label>
+
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5" title="Outstanding"></label>
+        </fieldset>
+      </div>
+
+      <input required type="email" name="email" class="add-rating-email" placeholder="Enter email" />
+      <button type="submit" class="add-rating-submit-btn">Send</button>
+    </form>
+  </div>
+</div>
+  <div class="scroll-up">
+    <svg viewBox="0 0 32 32" class="scroll-up--svg">
+        <path class="scroll-up--path" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16v0c0 8.837 7.163 16 16 
+            16v0zM16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14c-7.732 0-14-6.268-14-14v0c0-7.732 6.268-14 14-14v0z">
+        </path>
+    </svg>
+</div>
+
+  
+
+</body>
+
+</html>
